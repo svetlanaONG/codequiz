@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Quiz</title>
+    <link rel="stylesheet" href="./script.js" />
+</head>
+
+<body>
+    <main id='main-container' class="quiz-container">
+        <div id="start-quiz" class="quiz-form">
+            <h1 class="form-title">JavaScript Coding Quiz Challenge</h1>
+            <div id="start-quiz-step-1">
+                <p class="text-align-center">Try to answer the following code-related questions within the time limit.
+                    Keep in mind that incorrect answers will penalize your score and time by ten seconds.</p>
+                <div class="form-button-wrapper">
+                    <button id="start-quiz-button" class="cta cta-primary" type="button">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question-zone" class="quiz-form">
+            <!-- Timer Set Up -->
+            <div id="timer">
+                <p class="text-align-right">
+                    Time Remaining: <span id="timer-countdown">90</span>s
+                </p>
+              </div>
+              <!-- Score Set Up -->
+              <div id="score">
+                  <p class="text-align-right">
+                      User Score: <span id="user-score">90</span> points.
+                  </p>
+              </div>
+  
+              <div id="question-title"></div>
+              <div id="quiz-answers"></div>
+              <div id="question-result"></div>
+          </div>
+  
+  
+  
+          <!-- Final Score Area -->
+          <div id="final-score-container" class="quiz-form">
+              <h2 class="form-title">Good Job!</h2>
+              <p class="text-align-center question-title">Your Final Score is <span id="final-score">90</span> points.</p>
+              <span class="enter-initials-container">
+                  <label class="question-title" for="initials">Enter Initials:</label>
+                  <input id="initials" name="initials" class="form-input" type="input" />
+                  <button id="initials-submit-button" class="cta cta-primary quiz-button initials-button" type="submit">Submit</button>
+              </span>
+              <div id="score-saved"></div>
+          </div>
+      </main>
+      <footer class="cta cta-primary view-highscores">
+          <h2>
+              <a href="./highscores.html">View Highscores</a>
+          </h2>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+    </body>
+    
+    </html>
